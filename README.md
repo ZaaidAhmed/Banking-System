@@ -1,50 +1,34 @@
 # Banking System
 
-## Overview
+A Java object-oriented banking system that models account operations, transfer rules, validation, custom exceptions, and automated tests.
 
-This project represents a **Banking System** implemented in Java that allows users to perform various banking operations like **deposit**, **withdraw**, **transfer** between accounts, and more. It utilizes object-oriented principles and includes custom exceptions to handle scenarios like insufficient balance or exceeding transfer limits.
+## What it demonstrates
 
-The system supports:
-- **Account management**: Each account has a unique account number, balance, account holder's name, and maximum transferable amount.
-- **Transactions**: Users can deposit, withdraw, and transfer money between different accounts with various validation checks.
-- **Custom Exceptions**: Handles errors like insufficient balance and transfer restrictions with user-defined exceptions.
-  
-## Features
+- Designing domain classes for account and current-account behavior.
+- Implementing deposit, withdrawal, and account-to-account transfers.
+- Enforcing business rules with custom exceptions such as insufficient funds and transfer restrictions.
+- Structuring a small Java application for readable, testable behavior.
 
-- **Account Operations**:
-  - Deposit money to an account.
-  - Withdraw money with checks for sufficient balance and transfer limits.
-  - Transfer money between two accounts with proper validations.
+## Core functionality
 
-- **Custom Exceptions**:
-  - `NotEnoughMoneyException`: Thrown when there are insufficient funds in the account for a transaction.
-  - `TransferNotAllowedException`: Thrown when a transfer exceeds the allowable limit for the account.
+- Account creation and account information.
+- Deposits and withdrawals with validation.
+- Transfers between accounts.
+- Transfer-limit and balance checks.
+- Custom exception handling.
+- JUnit tests for core behavior.
 
-- **Account Comparison**: Accounts can be compared based on their attributes (account number, balance, account holder's name, etc.).
+## Tech stack
 
-## Classes & Structure
+- Java
+- Object-oriented design
+- JUnit
+- Git
 
-### `Account`
-- An abstract class representing a general bank account. It defines basic operations such as depositing, withdrawing, and transferring money, along with accessors for various attributes like account number, balance, and account holder's name.
+## Run and test
 
-### `Current`
-- A subclass of `Account` that represents a current bank account. This class implements deposit and withdraw functionalities and includes checks for insufficient funds and transfer restrictions.
+The repository is organized as a Java project. Open it in a Java-compatible IDE, configure the project SDK, and run the test suite through the IDE or the project’s configured build tooling.
 
-### `NotEnoughMoneyException`
-- A custom exception class thrown when there isn't enough balance to complete a transaction.
+## Project notes
 
-### `TransferNotAllowedException`
-- A custom exception class thrown when a transfer exceeds the maximum allowable amount for the account.
-
-## How to Use
-
-1. **Clone the repository**:
-git clone https://github.com/ZaaidAhmed/Banking-System.git
-
-markdown
-Copy
-
-2. **Run the tests**:
-- The project includes JUnit tests to validate the banking operations.
-- Use your IDE or a command-line tool to run tests.
-
+This project is a focused example of applying object-oriented programming and defensive validation to a business-style domain. It is especially useful for reviewing class responsibility, error handling, and testable transaction logic.
