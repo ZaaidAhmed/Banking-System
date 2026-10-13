@@ -1,3 +1,7 @@
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)](https://www.java.com/)
+[![JUnit](https://img.shields.io/badge/JUnit-25A162?style=flat&logo=junit5&logoColor=white)](https://junit.org/)
+[![Testing](https://img.shields.io/badge/Focus-testing-1f6feb?style=flat)](https://github.com/ZaaidAhmed/Banking-System)
+
 # Banking System
 
 A Java object-oriented banking system that models account operations, transfer rules, validation, custom exceptions, and automated tests.
