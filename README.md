@@ -36,3 +36,28 @@ The repository is organized as a Java project. Open it in a Java-compatible IDE,
 ## Project notes
 
 This project is a focused example of applying object-oriented programming and defensive validation to a business-style domain. It is especially useful for reviewing class responsibility, error handling, and testable transaction logic.
+
+## Architecture
+
+    Application entry point
+      |
+      v
+    Account domain classes
+      |
+      +--> deposit and withdrawal rules
+      +--> transfer rules
+      +--> account state
+      |
+      v
+    Custom exceptions
+      |
+      v
+    JUnit tests for expected and invalid operations
+
+## How it works
+
+1. The application creates account objects with account information and transaction limits.
+2. Deposit and withdrawal operations validate the requested amount and current balance.
+3. Transfers validate both account state and transfer limits before updating balances.
+4. Invalid operations raise domain-specific exceptions.
+5. JUnit tests exercise normal transactions and failure conditions.
